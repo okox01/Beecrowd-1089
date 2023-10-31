@@ -15,7 +15,8 @@ int main() {
         for (int i = 0; i < n; i++) {
             if ((num[i] > num[(i + 1)%n] && num[i] > num[(i + n - 1)%n]) || (num[i] < num[(i + 1)%n] && num[i] < num[(i + n - 1)%n])) {
                 count1++;
-            }
+            }                 //need to check whelther the next value and last value is greater or less than a same time. then it will 
+                              //-count otherwise it will not.   
         }
         printf("%d\n", count1);
     }
